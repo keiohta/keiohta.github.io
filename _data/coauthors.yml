@@ -32,3 +32,19 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+# "ota":
+#   - firstname: ["Kei"]
+#     url: https://keiohta.github.io/
+
+"kanezaki":
+  - firstname: ["Asako"]
+    url: https://kanezaki.github.io/
+
+"hoshino":
+  - firstname: ["Hana"]
+    url: https://www.linkedin.com/in/hanna-hoshino
+
+"jha":
+  - firstname: ["Devesh", "Devesh K."]
+    url: https://www.merl.com/people/jha

@@ -11,3 +11,5 @@ assets/libs/
 node_modules/
 vendor
 .idea
+.mp4
+assets/img/publication_preview/mp4/*

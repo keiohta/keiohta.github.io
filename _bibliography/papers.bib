@@ -1,15 +1,237 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{CVPR = "Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"}
+@string{ECCV = "Proceedings of European Conference on Computer Vision (ECCV)"}
+@string{BMVC = "Proceedings of British Machine Vision Conference (BMVC)"}
+@string{ACCV = "Proceedings of Asian Conference on Computer Vision (ACCV)"}
+@string{ICCV = "Proceedings of International Conference on Computer Vision (ICCV)"}
+@string{ICPR = "Proceedings of International Conference on Pattern Recognition (ICPR)"}
+@string{IJCV = "International Journal of Computer Vision"}
+@string{TVCG = "IEEE Transactions on Visualization and Computer Graphics"}
+@string{PAMI = "IEEE Transactions on Pattern Analysis and Machine Intelligence"}
+@string{RAL = "IEEE Robotics and Automation Letters (RAL)"}
+@string{TRO = "IEEE Transactions on Robotics (TRO)"}
+@string{IJRR = "The International Journal of Robotics Research (IJRR)"}
+@string{JAIR = "Journal of Artificial Intelligence Research"}
+@string{IJCAI = "Proceedings of International Joint Conference on Artificial Intelligence (IJCAI)"}
+@string{NIPS = "Proceedings of Advances in Neural Information Processing Systems (NeurIPS)"}
+@string{ICML = "Proceedings of International Conference on Machine Learning (ICML)"}
+@string{IROS = "Proceedings of IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"}
+@string{ICRA = "Proceedings of IEEE International Conference on Robotics and Automation (ICRA)"}
+@string{HUMANOIDS = "Proceedings of IEEE-RAS International Conference on Humanoid Robotics (Humanoids)"}
+@string{ICLR = "Proceedings of International Conference on Learning Representations (ICLR)"}
+@string{IJCNN = "Proceedings of International Joint Conference on Neural Networks (IJCNN)"}
+@string{RSS = "Robotics Science and System (RSS)"}
+@string{CoRL = "Proceedings of the 5th Conference on Robot Learning (CoRL)"}
+@string{AAAI = "Proceedings of AAAI Conference on Artificial Intelligence (AAAI)"}
+@string{CogSci = "Cognitive Science Society (CogSci)"}
+@string{AISTATS = "Proceedings of the Artificial Intelligence and Statistics (AISTATS)"}
+@string{AAMAS = "Proceedings of International Conference on Autonomous Agents and Multiagent Systems (AAMAS)"}
+@string{ECC = "European Control Conference (ECC)"}
+@string{CDC = "IEEE Conference on Decision and Control (CDC)"}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@string{ICRA = "ICRA"}
+@string{ICML = "ICML"}
+@string{IROS = "IROS"}
+@string{CoRL = "CoRL"}
+@string{RAL = "RAL"}
+@string{RSS = "RSS"}
+@string{INTERSPEECH = "INTERSPEECH"}
+
+@Article{ota2024aframework,
+    author={Ota, Kei
+    and Jha, Devesh K.
+    and Kanezaki, Asako},
+    title={A framework for training larger networks for deep Reinforcement learning},
+    journal={Machine Learning},
+    year={2024},
+    month={Jun},
+    day={05},
+    abstract={The success of deep learning in computer vision and natural language processing communities can be attributed to the training of very deep neural networks with millions or billions of parameters, which can then be trained with massive amounts of data. However, a similar trend has largely eluded the training of deep reinforcement learning (RL) algorithms where larger networks do not lead to performance improvement. Previous work has shown that this is mostly due to instability during the training of deep RL agents when using larger networks. In this paper, we make an attempt to understand and address the training of larger networks for deep RL. We first show that naively increasing network capacity does not improve performance. Then, we propose a novel method that consists of (1) wider networks with DenseNet connection, (2) decoupling representation learning from the training of RL, and (3) a distributed training method to mitigate overfitting problems. Using this three-fold technique, we show that we can train very large networks that result in significant performance gains. We present several ablation studies to demonstrate the efficacy of the proposed method and some intuitive understanding of the reasons for performance gain. We show that our proposed method outperforms other baseline algorithms on several challenging locomotion tasks.},
+    issn={1573-0565},
+    doi={10.1007/s10994-024-06547-6},
+    url={https://doi.org/10.1007/s10994-024-06547-6}
 }
+
+@inproceedings{ota2024autonomous,
+  title={Autonomous Robotic Assembly: From Part Singulation to Precise Assembly}, 
+  author={Kei Ota AND Devesh K. Jha AND Siddarth Jain AND Bill Yerazunis AND Radu Corcodel AND Yash Shukla AND Antonia Bronars, ANDDiego Romeres},
+  booktitle=IROS,
+  year={2024},
+  preview={iros2024_assembly.gif}
+}
+
+@INPROCEEDINGS{ota2024tactileestimation,
+  author={Ota, Kei and Jha, Devesh K. and Jatavallabhula, Krishna Murthy and Kanezaki, Asako and Tenenbaum, Joshua B.},
+  booktitle=ICRA, 
+  title={Tactile Estimation of Extrinsic Contact Patch for Stable Placement}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={13876-13882},
+  keywords={Training;Geometry;Force measurement;Stacking;Force;Estimation;Games},
+  doi={10.1109/ICRA57147.2024.10611504},
+  preview={icra2024_bandu.gif}
+}
+
+@INPROCEEDINGS{boyuan2024robust,
+  author={Liang, Boyuan and Ota, Kei and Tomizuka, Masayoshi and Jha, Devesh K.},
+  booktitle=ICRA, 
+  title={Robust In-Hand Manipulation with Extrinsic Contacts}, 
+  year={2024},
+  volume={},
+  number={},
+  video={https://www.youtube.com/watch?v=YWk4PPY-IE8},
+  pages={6544-6550},
+  keywords={Uncertainty;Accuracy;Computational modeling;Kinematics;Planning;Task analysis;Robots},
+  doi={10.1109/ICRA57147.2024.10611664},
+  bibtex_show={true},
+}
+
+@article{kambara2024human,
+  title={Human Action Understanding-based Robot Planning using Multimodal LLM},
+  author={Motonari Kambara and Chiori Hori and Komei Sugiura and Kei Ota and Devesh K Jha and Sameer Khurana and Siddarth Jain and Radu Corcodel and Diego Romeres and Jonathan Le Roux},
+  journal={ICRA Cooking Robotics Workshop},
+  bibtex_show={true},
+  year={2024}
+}
+
+
+@article{ota2023tactilepose,
+  title={Tactile Pose Feedback for Closed-loop Manipulation Tasks},
+  author={Kei Ota and Siddarth Jain and Mengchao Zhang and Devesh K Jha},
+  journal={RSS Dexterous Manipulation Workshop},
+  bibtex_show={true},
+  year={2023}
+}
+
+@article{ota2023tactile,
+  title={Tactile-Filter: Interactive Tactile Perception for Part Mating},
+  author={Ota, Kei and Jha, Devesh K and Tung, Hsiao-Yu and Tenenbaum, Joshua B},
+  journal=RSS,
+  video={https://www.youtube.com/watch?v=jMVBg_e3gLw},
+  year={2023},
+  bibtex_show={true},
+  preview={rss2023_tactile_filter.gif},
+}
+
+@INPROCEEDINGS{hori2023style,
+  author={Chiori Hori and Puyuan Peng and David Harwath and Xinyu Liu and Kei Ota and Siddarth Jain and Radu Corcodel and Devesh Jha and Diego Romeres and Jonathan Le Roux},
+  booktitle=INTERSPEECH, 
+  title={Style-transfer based Speech and Audio-visual Scene Understanding for Robot Action Sequence Acquisition from Videos}, 
+  year={2023},
+  bibtex_show={true},
+  preview={internspeech2023_cooking.gif}
+}
+
+@INPROCEEDINGS{ota2023hsaur,
+  author={Ota, Kei and Tung, Hsiao-Yu and Smith, Kevin A. and Cherian, Anoop and Marks, Tim K. and Sullivan, Alan and Kanezaki, Asako and Tenenbaum, Joshua B.},
+  booktitle=ICRA, 
+  title={H-SAUR: Hypothesize, Simulate, Act, Update, and Repeat for Understanding Object Articulations from Interactions}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={7272-7278},
+  keywords={Geometry;Adaptation models;Visualization;Motion segmentation;Training data;Kinematics;Probabilistic logic},
+  doi={10.1109/ICRA48891.2023.10160575},
+  bibtex_show={true},
+  preview={icra2023_hsaur.gif},
+}
+
+@INPROCEEDINGS{hoshino2022opirl,
+  author={Hoshino, Hana and Ota, Kei and Kanezaki, Asako and Yokota, Rio},
+  booktitle=ICRA, 
+  title={OPIRL: Sample Efficient Off-Policy Inverse Reinforcement Learning via Distribution Matching}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={448-454},
+  keywords={Training;Automation;Reinforcement learning;Control systems;Behavioral sciences;Usability;Task analysis;Imitation Learning;Transfer Learning;Learning from Demonstration;Inverse Reinforcement Learning},
+  doi={10.1109/ICRA46639.2022.9811660},
+  bibtex_show={true},
+}
+
+@INPROCEEDINGS{fukushima2022object,
+  author={Fukushima, Rui and Ota, Kei and Kanezaki, Asako and Sasaki, Yoko and Yoshiyasu, Yusuke},
+  booktitle=ICRA, 
+  title={Object Memory Transformer for Object Goal Navigation}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={11288-11294},
+  keywords={Three-dimensional displays;Navigation;Semantics;Reinforcement learning;Benchmark testing;Transformers;Encoding},
+  doi={10.1109/ICRA46639.2022.9812027},
+  bibtex_show={true},
+}
+
+@ARTICLE{ota2021data,
+  author={Ota, Kei and Jha, Devesh K. and Romeres, Diego and van Baar, Jeroen and Smith, Kevin A. and Semitsu, Takayuki and Oiki, Tomoaki and Sullivan, Alan and Nikovski, Daniel and Tenenbaum, Joshua B.},
+  journal=RAL, 
+  title={Data-Efficient Learning for Complex and Real-Time Physical Problem Solving Using Augmented Simulation}, 
+  year={2021},
+  volume={6},
+  number={2},
+  pages={4241-4248},
+  doi={10.1109/LRA.2021.3068887}}
+
+@InProceedings{ota2020can,
+  title = 	 {Can Increasing Input Dimensionality Improve Deep Reinforcement Learning?},
+  author =       {Ota, Kei and Oiki, Tomoaki and Jha, Devesh and Mariyama, Toshisada and Nikovski, Daniel},
+  booktitle = 	 ICML,
+  pages = 	 {7424--7433},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/ota20a/ota20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/ota20a.html},
+  abstract = 	 {Deep reinforcement learning (RL) algorithms have recently achieved remarkable successes in various sequential decision making tasks, leveraging advances in methods for training large deep networks. However, these methods usually require large amounts of training data, which is often a big problem for real-world applications. One natural question to ask is whether learning good representations for states and using larger networks helps in learning better policies. In this paper, we try to study if increasing input dimensionality helps improve performance and sample efficiency of model-free deep RL algorithms. To do so, we propose an online feature extractor network (OFENet) that uses neural nets to produce \emph{good} representations to be used as inputs to an off-policy RL algorithm. Even though the high dimensionality of input is usually thought to make learning of RL agents more difficult, we show that the RL agents in fact learn more efficiently with the high-dimensional representation than with the lower-dimensional state observations. We believe that stronger feature propagation together with larger networks allows RL agents to learn more complex functions of states and thus improves the sample efficiency. Through numerical experiments, we show that the proposed method achieves much higher sample efficiency and better performance. Codes for the proposed method are available at http://www.merl.com/research/license/OFENet}
+}
+
+@InProceedings{ota2020deep,
+  title = 	 {Deep Reactive Planning in Dynamic Environments},
+  author =       {Ota, Kei and Jha, Devesh and Onishi, Tadashi and Kanezaki, Asako and Yoshiyasu, Yusuke and Sasaki, Yoko and Mariyama, Toshisada and Nikovski, Daniel},
+  booktitle = 	 CoRL,
+  pages = 	 {1943--1957},
+  year = 	 {2020},
+  editor = 	 {Kober, Jens and Ramos, Fabio and Tomlin, Claire},
+  volume = 	 {155},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {16--18 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v155/ota21a/ota21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v155/ota21a.html},
+  video={https://www.youtube.com/watch?v=hE-Ew59GRPQ},
+  abstract = 	 {The main novelty of the proposed approach is that it allows a robot to learn an end-to-end policy which can adapt to changes in the environment during execution. While goal conditioning of policies has been studied in the RL literature, such approaches are not easily extended to settings where the robot’s goal can change during execution. This is something that humans are naturally able to do. However, it is difficult for robots to learn such reflexes (i.e., to naturally respond to dynamic environments), especially when the goal location is not explicitly provided to the robot, and instead needs to be perceived through a vision sensor. In the current work, we present a method that can achieve such behavior by combining traditional kinematic planning, deep learning, and deep reinforcement learning in a synergistic fashion to generalize to arbitrary environments. We demonstrate the proposed approach for several reaching and pick-and-place tasks in simulation, as well as on a real system of a 6-DoF industrial manipulator.},
+  preview={corl2020_deep_reactive_planning.gif},
+}
+
+@INPROCEEDINGS{ota2020efficient,
+  author={Ota, Kei and Sasaki, Yoko and Jha, Devesh K. and Yoshiyasu, Yusuke and Kanezaki, Asako},
+  booktitle=IROS, 
+  title={Efficient Exploration in Constrained Environments with Goal-Oriented Reference Path}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={6061-6068},
+  keywords={Training;Navigation;Supervised learning;Reinforcement learning;Prediction algorithms;Path planning;Safety},
+  doi={10.1109/IROS45743.2020.9341620},
+  preview={iros2020_efficient_exploration.gif}
+}
+
+@INPROCEEDINGS{ota2019trajectory,
+  author={Ota, Kei and Jha, Devesh K. and Oiki, Tomoaki and Miura, Mamoru and Nammoto, Takashi and Nikovski, Daniel and Mariyama, Toshisada},
+  booktitle=IROS, 
+  title={Trajectory Optimization for Unknown Constrained Systems using Reinforcement Learning}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={3487-3494},
+  keywords={},
+  doi={10.1109/IROS40897.2019.8968010}}
 
 @book{einstein1956investigations,
   bibtex_show={true},
