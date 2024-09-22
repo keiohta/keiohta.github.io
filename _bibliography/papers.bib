@@ -40,18 +40,20 @@
 @string{INTERSPEECH = "INTERSPEECH"}
 
 @Article{ota2024aframework,
-    author={Ota, Kei
-    and Jha, Devesh K.
-    and Kanezaki, Asako},
-    title={A framework for training larger networks for deep Reinforcement learning},
-    journal={Machine Learning},
-    year={2024},
-    month={Jun},
-    day={05},
-    abstract={The success of deep learning in computer vision and natural language processing communities can be attributed to the training of very deep neural networks with millions or billions of parameters, which can then be trained with massive amounts of data. However, a similar trend has largely eluded the training of deep reinforcement learning (RL) algorithms where larger networks do not lead to performance improvement. Previous work has shown that this is mostly due to instability during the training of deep RL agents when using larger networks. In this paper, we make an attempt to understand and address the training of larger networks for deep RL. We first show that naively increasing network capacity does not improve performance. Then, we propose a novel method that consists of (1) wider networks with DenseNet connection, (2) decoupling representation learning from the training of RL, and (3) a distributed training method to mitigate overfitting problems. Using this three-fold technique, we show that we can train very large networks that result in significant performance gains. We present several ablation studies to demonstrate the efficacy of the proposed method and some intuitive understanding of the reasons for performance gain. We show that our proposed method outperforms other baseline algorithms on several challenging locomotion tasks.},
-    issn={1573-0565},
-    doi={10.1007/s10994-024-06547-6},
-    url={https://doi.org/10.1007/s10994-024-06547-6}
+  author={Ota, Kei
+  and Jha, Devesh K.
+  and Kanezaki, Asako},
+  title={A framework for training larger networks for deep Reinforcement learning},
+  journal={Machine Learning},
+  year={2024},
+  month={Jun},
+  day={05},
+  abstract={The success of deep learning in computer vision and natural language processing communities can be attributed to the training of very deep neural networks with millions or billions of parameters, which can then be trained with massive amounts of data. However, a similar trend has largely eluded the training of deep reinforcement learning (RL) algorithms where larger networks do not lead to performance improvement. Previous work has shown that this is mostly due to instability during the training of deep RL agents when using larger networks. In this paper, we make an attempt to understand and address the training of larger networks for deep RL. We first show that naively increasing network capacity does not improve performance. Then, we propose a novel method that consists of (1) wider networks with DenseNet connection, (2) decoupling representation learning from the training of RL, and (3) a distributed training method to mitigate overfitting problems. Using this three-fold technique, we show that we can train very large networks that result in significant performance gains. We present several ablation studies to demonstrate the efficacy of the proposed method and some intuitive understanding of the reasons for performance gain. We show that our proposed method outperforms other baseline algorithms on several challenging locomotion tasks.},
+  issn={1573-0565},
+  doi={10.1007/s10994-024-06547-6},
+  bibtex_show={true},
+  url={https://doi.org/10.1007/s10994-024-06547-6},
+  preview={mlj2023_largerrl.png}
 }
 
 @inproceedings{ota2024autonomous,
@@ -59,6 +61,8 @@
   author={Kei Ota AND Devesh K. Jha AND Siddarth Jain AND Bill Yerazunis AND Radu Corcodel AND Yash Shukla AND Antonia Bronars, ANDDiego Romeres},
   booktitle=IROS,
   year={2024},
+  video={https://www.youtube.com/watch?v=cZ9M1DQ23OI},
+  bibtex_show={true},
   preview={iros2024_assembly.gif}
 }
 
@@ -72,6 +76,7 @@
   pages={13876-13882},
   keywords={Training;Geometry;Force measurement;Stacking;Force;Estimation;Games},
   doi={10.1109/ICRA57147.2024.10611504},
+  bibtex_show={true},
   preview={icra2024_bandu.gif}
 }
 
@@ -87,6 +92,7 @@
   keywords={Uncertainty;Accuracy;Computational modeling;Kinematics;Planning;Task analysis;Robots},
   doi={10.1109/ICRA57147.2024.10611664},
   bibtex_show={true},
+  preview={icra2024_robust_pivoting.gif}
 }
 
 @article{kambara2024human,
@@ -94,7 +100,8 @@
   author={Motonari Kambara and Chiori Hori and Komei Sugiura and Kei Ota and Devesh K Jha and Sameer Khurana and Siddarth Jain and Radu Corcodel and Diego Romeres and Jonathan Le Roux},
   journal={ICRA Cooking Robotics Workshop},
   bibtex_show={true},
-  year={2024}
+  year={2024},
+  preview={icra2024ws_cooking.png}
 }
 
 
@@ -103,7 +110,8 @@
   author={Kei Ota and Siddarth Jain and Mengchao Zhang and Devesh K Jha},
   journal={RSS Dexterous Manipulation Workshop},
   bibtex_show={true},
-  year={2023}
+  year={2023},
+  preview={rss2023ws_tactile_pose_feedback.gif}
 }
 
 @article{ota2023tactile,
@@ -150,6 +158,7 @@
   keywords={Training;Automation;Reinforcement learning;Control systems;Behavioral sciences;Usability;Task analysis;Imitation Learning;Transfer Learning;Learning from Demonstration;Inverse Reinforcement Learning},
   doi={10.1109/ICRA46639.2022.9811660},
   bibtex_show={true},
+  preview={icra2022_opirl.gif}
 }
 
 @INPROCEEDINGS{fukushima2022object,
@@ -163,6 +172,7 @@
   keywords={Three-dimensional displays;Navigation;Semantics;Reinforcement learning;Benchmark testing;Transformers;Encoding},
   doi={10.1109/ICRA46639.2022.9812027},
   bibtex_show={true},
+  preview={icra2022_navigation.gif}
 }
 
 @ARTICLE{ota2021data,
@@ -173,7 +183,11 @@
   volume={6},
   number={2},
   pages={4241-4248},
-  doi={10.1109/LRA.2021.3068887}}
+  doi={10.1109/LRA.2021.3068887},
+  video={https://www.youtube.com/watch?v=xaxNCXBovpc},
+  bibtex_show={true},
+  preview={icra2021_maze.gif},
+}
 
 @InProceedings{ota2020can,
   title = 	 {Can Increasing Input Dimensionality Improve Deep Reinforcement Learning?},
@@ -188,7 +202,9 @@
   publisher =    {PMLR},
   pdf = 	 {http://proceedings.mlr.press/v119/ota20a/ota20a.pdf},
   url = 	 {https://proceedings.mlr.press/v119/ota20a.html},
-  abstract = 	 {Deep reinforcement learning (RL) algorithms have recently achieved remarkable successes in various sequential decision making tasks, leveraging advances in methods for training large deep networks. However, these methods usually require large amounts of training data, which is often a big problem for real-world applications. One natural question to ask is whether learning good representations for states and using larger networks helps in learning better policies. In this paper, we try to study if increasing input dimensionality helps improve performance and sample efficiency of model-free deep RL algorithms. To do so, we propose an online feature extractor network (OFENet) that uses neural nets to produce \emph{good} representations to be used as inputs to an off-policy RL algorithm. Even though the high dimensionality of input is usually thought to make learning of RL agents more difficult, we show that the RL agents in fact learn more efficiently with the high-dimensional representation than with the lower-dimensional state observations. We believe that stronger feature propagation together with larger networks allows RL agents to learn more complex functions of states and thus improves the sample efficiency. Through numerical experiments, we show that the proposed method achieves much higher sample efficiency and better performance. Codes for the proposed method are available at http://www.merl.com/research/license/OFENet}
+  abstract = 	 {Deep reinforcement learning (RL) algorithms have recently achieved remarkable successes in various sequential decision making tasks, leveraging advances in methods for training large deep networks. However, these methods usually require large amounts of training data, which is often a big problem for real-world applications. One natural question to ask is whether learning good representations for states and using larger networks helps in learning better policies. In this paper, we try to study if increasing input dimensionality helps improve performance and sample efficiency of model-free deep RL algorithms. To do so, we propose an online feature extractor network (OFENet) that uses neural nets to produce \emph{good} representations to be used as inputs to an off-policy RL algorithm. Even though the high dimensionality of input is usually thought to make learning of RL agents more difficult, we show that the RL agents in fact learn more efficiently with the high-dimensional representation than with the lower-dimensional state observations. We believe that stronger feature propagation together with larger networks allows RL agents to learn more complex functions of states and thus improves the sample efficiency. Through numerical experiments, we show that the proposed method achieves much higher sample efficiency and better performance. Codes for the proposed method are available at http://www.merl.com/research/license/OFENet},
+  bibtex_show={true},
+  preview={icml2020_ofenet.png}
 }
 
 @InProceedings{ota2020deep,
@@ -206,6 +222,7 @@
   url = 	 {https://proceedings.mlr.press/v155/ota21a.html},
   video={https://www.youtube.com/watch?v=hE-Ew59GRPQ},
   abstract = 	 {The main novelty of the proposed approach is that it allows a robot to learn an end-to-end policy which can adapt to changes in the environment during execution. While goal conditioning of policies has been studied in the RL literature, such approaches are not easily extended to settings where the robot’s goal can change during execution. This is something that humans are naturally able to do. However, it is difficult for robots to learn such reflexes (i.e., to naturally respond to dynamic environments), especially when the goal location is not explicitly provided to the robot, and instead needs to be perceived through a vision sensor. In the current work, we present a method that can achieve such behavior by combining traditional kinematic planning, deep learning, and deep reinforcement learning in a synergistic fashion to generalize to arbitrary environments. We demonstrate the proposed approach for several reaching and pick-and-place tasks in simulation, as well as on a real system of a 6-DoF industrial manipulator.},
+  bibtex_show={true},
   preview={corl2020_deep_reactive_planning.gif},
 }
 
@@ -219,6 +236,7 @@
   pages={6061-6068},
   keywords={Training;Navigation;Supervised learning;Reinforcement learning;Prediction algorithms;Path planning;Safety},
   doi={10.1109/IROS45743.2020.9341620},
+  bibtex_show={true},
   preview={iros2020_efficient_exploration.gif}
 }
 
@@ -231,107 +249,7 @@
   number={},
   pages={3487-3494},
   keywords={},
-  doi={10.1109/IROS40897.2019.8968010}}
-
-@book{einstein1956investigations,
+  doi={10.1109/IROS40897.2019.8968010},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  preview={iros2019_trajopt.gif}
 }
