@@ -48,3 +48,31 @@
 "jha":
   - firstname: ["Devesh", "Devesh K."]
     url: https://www.merl.com/people/jha
+
+"murthy":
+  - firstname: ["Krishna", "Krishna Murthy"]
+    url: https://krrish94.github.io/
+
+"Kambara":
+  - firstname: ["Motonari"]
+    https://motonarikambara.github.io/
+
+"jain":
+  - firstname: ["Siddarth"]
+    https://www.merl.com/people/sjain
+
+"hsiao-Yu":
+  - firstname: ["Tung"]
+    https://sfish0101.bitbucket.io/
+
+"smith":
+  - firstname: ["Kevin A.", "Kevin"]
+    url: https://www.mit.edu/~k2smith/
+
+"tenenbaum":
+  - firstname: ["Josh", "Joshua", "Josh B.", "Joshua B."]
+    url: https://web.mit.edu/cocosci/josh.html
+
+"romeres":
+  - firstname: ["Diego"]
+    https://www.merl.com/people/romeres
