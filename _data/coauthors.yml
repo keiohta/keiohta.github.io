@@ -55,15 +55,15 @@
 
 "Kambara":
   - firstname: ["Motonari"]
-    https://motonarikambara.github.io/
+    url: https://motonarikambara.github.io/
 
 "jain":
   - firstname: ["Siddarth"]
-    https://www.merl.com/people/sjain
+    url: https://www.merl.com/people/sjain
 
 "hsiao-Yu":
   - firstname: ["Tung"]
-    https://sfish0101.bitbucket.io/
+    url: https://sfish0101.bitbucket.io/
 
 "smith":
   - firstname: ["Kevin A.", "Kevin"]
@@ -75,4 +75,4 @@
 
 "romeres":
   - firstname: ["Diego"]
-    https://www.merl.com/people/romeres
+    url: https://www.merl.com/people/romeres
