@@ -49,11 +49,15 @@
   - firstname: ["Devesh", "Devesh K."]
     url: https://www.merl.com/people/jha
 
+"jatavallabhula":
+  - firstname: ["Krishna", "Krishna Murthy"]
+    url: https://krrish94.github.io/
+
 "murthy":
   - firstname: ["Krishna", "Krishna Murthy"]
     url: https://krrish94.github.io/
 
-"Kambara":
+"kambara":
   - firstname: ["Motonari"]
     url: https://motonarikambara.github.io/
 
@@ -76,3 +80,7 @@
 "romeres":
   - firstname: ["Diego"]
     url: https://www.merl.com/people/romeres
+
+"tung":
+  - firstname: ["Hsiao-Yu"]
+    url: https://sfish0101.bitbucket.io/
