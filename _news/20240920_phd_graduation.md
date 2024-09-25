@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Got my PhD at TokyoTech
+Got my PhD at TokyoTech!

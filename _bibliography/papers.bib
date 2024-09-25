@@ -43,7 +43,7 @@
   author={Ota, Kei
   and Jha, Devesh K.
   and Kanezaki, Asako},
-  title={A framework for training larger networks for deep Reinforcement learning},
+  title={A Framework for Training Larger Networks for Deep Reinforcement Learning},
   journal={Machine Learning},
   year={2024},
   month={Jun},
@@ -52,6 +52,7 @@
   issn={1573-0565},
   doi={10.1007/s10994-024-06547-6},
   bibtex_show={true},
+  selected={true},
   url={https://doi.org/10.1007/s10994-024-06547-6},
   preview={mlj2023_largerrl.png}
 }
@@ -61,6 +62,7 @@
   author={Kei Ota AND Devesh K. Jha AND Siddarth Jain AND Bill Yerazunis AND Radu Corcodel AND Yash Shukla AND Antonia Bronars, AND Diego Romeres},
   booktitle=IROS,
   year={2024},
+  abstract={Imagine a robot that can assemble a functional product from the individual parts presented in any configuration to the robot. Designing such a robotic system is a complex problem which presents several open challenges. To bypass these challenges, the current generation of assembly systems is built with a lot of system integration effort to provide the structure and precision necessary for assembly. These systems are mostly responsible for part singulation, part kitting, and part detection, which is accomplished by intelligent system design. In this paper, we present autonomous assembly of a gear box with minimum requirements on structure. The assembly parts are randomly placed in a two-dimensional work environment for the robot. The proposed system makes use of several different manipulation skills such as sliding for grasping, in-hand manipulation, and insertion to assemble the gear box. All these tasks are run in a closed-loop fashion using vision, tactile, and Force-Torque (F/T) sensors. We perform extensive hardware experiments to show the robustness of the proposed methods as well as the overall system. See supplementary video at this [URL](https://www.youtube.com/watch?v=cZ9M1DQ23OI).},
   video={https://www.youtube.com/watch?v=cZ9M1DQ23OI},
   bibtex_show={true},
   selected={true},
@@ -77,6 +79,7 @@
   pages={13876-13882},
   keywords={Training;Geometry;Force measurement;Stacking;Force;Estimation;Games},
   doi={10.1109/ICRA57147.2024.10611504},
+  abstract={Precise perception of contact interactions is essential for fine-grained manipulation skills for robots. In this paper, we present the design of feedback skills for robots that must learn to stack complex-shaped objects on top of each other. To design such a system, a robot should be able to reason about the stability of placement from very gentle contact interactions. Our results demonstrate that it is possible to infer the stability of object placement based on tactile readings during contact formation between the object and its environment. In particular, we estimate the contact patch between a grasped object and its environment using force and tactile observations to estimate the stability of the object during a contact formation. The contact patch could be used to estimate the stability of the object upon release of the grasp. The proposed method is demonstrated in various pairs of objects that are used in a very popular board game.},
   selected={true},
   bibtex_show={true},
   preview={icra2024_bandu.gif}
@@ -89,6 +92,7 @@
   year={2024},
   volume={},
   number={},
+  abstract={We present in-hand manipulation tasks where a robot moves an object in grasp, maintains its external contact mode with the environment, and adjusts its in-hand pose simultaneously. The proposed manipulation task leads to complex contact interactions which can be very susceptible to uncertainties in kinematic and physical parameters. Therefore, we propose a robust in-hand manipulation method, which consists of two parts. First, an in-gripper mechanics model that computes a naïve motion cone assuming all parameters are precise. Then, a robust planning method refines the motion cone to maintain desired contact mode regardless of parametric errors. Real-world experiments were conducted to illustrate the accuracy of the mechanics model and the effectiveness of the robust planning framework in the presence of kinematics parameter errors.},
   video={https://www.youtube.com/watch?v=YWk4PPY-IE8},
   pages={6544-6550},
   keywords={Uncertainty;Accuracy;Computational modeling;Kinematics;Planning;Task analysis;Robots},
@@ -103,14 +107,16 @@
   journal={ICRA Cooking Robotics Workshop},
   bibtex_show={true},
   year={2024},
+  abstract={In future smart homes, robots are expected to handle everyday tasks such as cooking, replacing human involvement. Acquiring such skills autonomously for robots is highly challenging. Consequently, existing methods address this issue by collecting data by controlling real robots and training models through supervised learning. However, data collection for long-horizon tasks could be very painful. To solve this challenge, this work focuses on the task of generating action sequences for a robot arm from human videos demonstrating cooking tasks. The quality of generated action sequences by existing methods for this task is often inadequate. This is partly because existing methods do not effectively process each of the input modalities. To address this issue, we propose AVBLIP, a multimodal LLM model for the generation of robot action sequences. Our main contribution is the introduction of a multimodal encoder that allows multiple modalities of video, audio, speech, and text as inputs. This allows the generation of the next action to take into account both the speech information by humans and the audio information generated by the environment. As a result, the proposed method outperforms the baseline method in all standard evaluation metrics.},
+  video={https://www.youtube.com/watch?v=Q2GEwvYWwXA},
   preview={icra2024ws_cooking.png}
 }
-
 
 @article{ota2023tactilepose,
   title={Tactile Pose Feedback for Closed-loop Manipulation Tasks},
   author={Kei Ota and Siddarth Jain and Mengchao Zhang and Devesh K Jha},
   journal={RSS Dexterous Manipulation Workshop},
+  abstract={Current generation manipulation systems operate in an open-loop fashion resulting in poor performance in the presence of disturbances. Robust manipulation requires a robot to compensate for uncertainties and errors arising due to contact interaction during manipulation. Consequently, it is essential that a robot can estimate an object's state and the relevant contact states so that manipulation can be controlled precisely. However, precise object state estimation is difficult due to occlusions and complex contact interactions during manipulation. This paper presents several different manipulation tasks where a robot may have to perform complex manipulation, which can introduce uncertainty leading to failure. To deal with this problem, we use in-hand pose estimation using vision-based tactile sensors to adjust our plan during manipulation. We present several different analyses for pose estimation using vision as well as tactile sensors to evaluate the importance of different modalities for these precision tasks. We demonstrate that using the proposed approach, we can perform the desired task successfully by incorporating feedback from the tactile pose estimation framework.},
   bibtex_show={true},
   year={2023},
   preview={rss2023ws_tactile_pose_feedback.gif}
@@ -122,6 +128,8 @@
   journal=RSS,
   video={https://www.youtube.com/watch?v=jMVBg_e3gLw},
   year={2023},
+  abstract={Humans rely on touch and tactile sensing for a lot of dexterous manipulation tasks. Our tactile sensing provides us with a lot of information regarding contact formations as well as geometric information about objects during any interaction. With this motivation, vision-based tactile sensors are being widely used for various robotic perception and control tasks. In this paper, we present a method for interactive perception using vision-based tactile sensors for a part mating task, where a robot can use tactile sensors and a feedback mechanism using a particle filter to incrementally improve its estimate of objects \cam{(pegs and holes)} that fit together. To do this, we first train a deep neural network that makes use of tactile images to predict the probabilistic correspondence between arbitrarily shaped objects that fit together. The trained model is used to design a particle filter which is used twofold. First, given one partial (or non-unique) observation of the hole, it incrementally improves the estimate of the correct peg by sampling more tactile observations. Second, it selects the next action for the robot to sample the next touch (and thus image) which results in maximum uncertainty reduction to minimize the number of interactions during the perception task. We evaluate our method on several part-mating tasks \cam{with novel objects} using a robot equipped with a vision-based tactile sensor. We also show the efficiency of the proposed action selection method against a naive method. See supplementary [video](https://www.youtube.com/watch?v=jMVBg_e3gLw).},
+  selected={true},
   bibtex_show={true},
   preview={rss2023_tactile_filter.gif},
 }
@@ -130,6 +138,7 @@
   author={Chiori Hori and Puyuan Peng and David Harwath and Xinyu Liu and Kei Ota and Siddarth Jain and Radu Corcodel and Devesh Jha and Diego Romeres and Jonathan Le Roux},
   booktitle=INTERSPEECH, 
   title={Style-transfer based Speech and Audio-visual Scene Understanding for Robot Action Sequence Acquisition from Videos}, 
+  abstract={To realize human-robot collaboration, robots need to execute actions for new tasks according to human instructions given finite prior knowledge. Human experts can share their knowledge of how to perform a task with a robot through multi-modal instructions in their demonstrations, showing a sequence of short-horizon steps to achieve a long-horizon goal. This paper introduces a method for robot action sequence generation from instruction videos using (1) an audio-visual Transformer that converts audio-visual features and instruction speech to a sequence of robot actions called dynamic movement primitives (DMPs) and (2) style-transfer-based training that employs multi-task learning with video captioning and weakly-supervised learning with a semantic classifier to exploit unpaired video-action data. We built a system that accomplishes various cooking actions, where an arm robot executes a DMP sequence acquired from a cooking video using the audio-visual Transformer. Experiments with Epic-Kitchen-100, YouCookII, QuerYD, and in-house instruction video datasets show that the proposed method improves the quality of DMP sequences by 2.3 times the METEOR score obtained with a baseline video-to-action Transformer. The model achieved 32\% of the task success rate with the task knowledge of the object.},
   year={2023},
   bibtex_show={true},
   preview={internspeech2023_cooking.gif}
@@ -145,6 +154,7 @@
   pages={7272-7278},
   keywords={Geometry;Adaptation models;Visualization;Motion segmentation;Training data;Kinematics;Probabilistic logic},
   doi={10.1109/ICRA48891.2023.10160575},
+  abstract={The world is filled with articulated objects that are difficult to determine how to use from vision alone, e.g., a door might open inwards or outwards. Humans handle these objects with strategic trial-and-error: first pushing a door then pulling if that doesn't work. We enable these capabilities in autonomous agents by proposing “Hypothesize, Simulate, Act, Update, and Repeat” (H-SAUR), a probabilistic generative framework that simultaneously generates a distribution of hypotheses about how objects articulate given input observations captures certainty over hypotheses over time, and infer plausible actions for exploration and goal-conditioned manipulation. We compare our model with existing work in manipulating objects after a handful of exploration actions, on the PartNet-Mobility dataset. We further propose a novel PuzzleBoxes benchmark that contains locked boxes that require multiple steps to solve. We show that the proposed model significantly outperforms the current state-of-the-art articulated object manipulation framework, despite using zero training data. We further improve the test-time efficiency of H-SAUR by integrating a learned prior from learning-based vision models.},
   bibtex_show={true},
   preview={icra2023_hsaur.gif},
 }
@@ -159,6 +169,7 @@
   pages={448-454},
   keywords={Training;Automation;Reinforcement learning;Control systems;Behavioral sciences;Usability;Task analysis;Imitation Learning;Transfer Learning;Learning from Demonstration;Inverse Reinforcement Learning},
   doi={10.1109/ICRA46639.2022.9811660},
+  abstract={Inverse Reinforcement Learning (IRL) is attractive in scenarios where reward engineering can be tedious. However, prior IRL algorithms use on-policy transitions, which require intensive sampling from the current policy for stable and optimal performance. This limits IRL applications in the real world, where environment interactions can become highly expensive. To tackle this problem, we present Off-Policy Inverse Reinforcement Learning (OPIRL), which (1) adopts off-policy data distribution instead of on-policy and enables significant reduction of the number of interactions with the environment, (2) learns a reward function that is transferable with high generalization capabilities on changing dynamics, and (3) leverages mode-covering behavior for faster convergence. We demonstrate that our method is considerably more sample efficient and generalizes to novel environments through the experiments. Our method achieves better or comparable results on policy performance baselines with significantly fewer interactions. Furthermore, we empirically show that the recovered reward function generalizes to different tasks where prior arts are prone to fail.},
   bibtex_show={true},
   preview={icra2022_opirl.gif}
 }
@@ -173,6 +184,7 @@
   pages={11288-11294},
   keywords={Three-dimensional displays;Navigation;Semantics;Reinforcement learning;Benchmark testing;Transformers;Encoding},
   doi={10.1109/ICRA46639.2022.9812027},
+  abstract={This paper presents a reinforcement learning method for object goal navigation (ObjNav) where an agent navigates in 3D indoor environments to reach a target object based on long-term observations of objects and scenes. To this end, we propose Object Memory Transformer (OMT) that consists of two key ideas: 1) Object-Scene Memory (OSM) that enables to store long-term scenes and object semantics, and 2) Transformer that attends to salient objects in the sequence of previously observed scenes and objects stored in OSM. This mechanism allows the agent to efficiently navigate in the indoor environment without prior knowledge about the environments, such as topological maps or 3D meshes. To the best of our knowledge, this is the first work that uses a long-term memory of object semantics in a goal-oriented navigation task. Experimental results conducted on the AI2-THOR dataset show that OMT outperforms previous approaches in navigating in unknown environments. In particular, we show that utilizing the long-term object semantics information improves the efficiency of navigation.},
   bibtex_show={true},
   preview={icra2022_navigation.gif}
 }
@@ -187,6 +199,7 @@
   pages={4241-4248},
   doi={10.1109/LRA.2021.3068887},
   video={https://www.youtube.com/watch?v=xaxNCXBovpc},
+  abstract={Humans quickly solve tasks in novel systems with complex dynamics, without requiring much interaction. While deep reinforcement learning algorithms have achieved tremendous success in many complex tasks, these algorithms need a large number of samples to learn meaningful policies. In this paper, we present a task for navigating a marble to the center of a circular maze. While this system is very intuitive and easy for humans to solve, it can be very difficult and inefficient for standard reinforcement learning algorithms to learn meaningful policies. We present a model that learns to move a marble in the complex environment within minutes of interacting with the real system. Learning consists of initializing a physics engine with parameters estimated using data from the real system. The error in the physics engine is then corrected using Gaussian process regression, which is used to model the residual between real observations and physics engine simulations. The physics engine augmented with the residual model is then used to control the marble in the maze environment using a model-predictive feedback over a receding horizon. To the best of our knowledge, this is the first time that a hybrid model consisting of a full physics engine along with a statistical function approximator has been used to control a complex physical system in real-time using nonlinear model-predictive control (NMPC).},
   selected={true},
   bibtex_show={true},
   preview={icra2021_maze.gif},
@@ -239,6 +252,7 @@
   pages={6061-6068},
   keywords={Training;Navigation;Supervised learning;Reinforcement learning;Prediction algorithms;Path planning;Safety},
   doi={10.1109/IROS45743.2020.9341620},
+  abstract={In this paper, we consider the problem of building learning agents that can efficiently learn to navigate in constrained environments. The main goal is to design agents that can efficiently learn to understand and generalize to different environments using high-dimensional inputs (a 2D map), while following feasible paths that avoid obstacles in obstacle-cluttered environment. To achieve this, we make use of traditional path planning algorithms, supervised learning, and reinforcement learning algorithms in a synergistic way. The key idea is to decouple the navigation problem into planning and control, the former of which is achieved by supervised learning whereas the latter is done by reinforcement learning. Specifically, we train a deep convolutional network that can predict collision-free paths based on a map of the environment-- this is then used by an reinforcement learning algorithm to learn to closely follow the path. This allows the trained agent to achieve good generalization while learning faster. We test our proposed method in the recently proposed \textit{Safety Gym} suite that allows testing of safety-constraints during training of learning agents. We compare our proposed method with existing work and show that our method consistently improves the sample efficiency and generalization capability to novel environments.},
   bibtex_show={true},
   preview={iros2020_efficient_exploration.gif}
 }
@@ -253,6 +267,7 @@
   pages={3487-3494},
   keywords={},
   doi={10.1109/IROS40897.2019.8968010},
+  abstract={In this paper, we propose a reinforcement learning-based algorithm for trajectory optimization for constrained dynamical systems. This problem is motivated by the fact that for most robotic systems, the dynamics may not always be known. Generating smooth, dynamically feasible trajectories could be difficult for such systems. Using sampling-based algorithms for motion planning may result in trajectories that are prone to undesirable control jumps. However, they can usually provide a good reference trajectory which a model-free reinforcement learning algorithm can then exploit by limiting the search domain and quickly finding a dynamically smooth trajectory. We use this idea to train a reinforcement learning agent to learn a dynamically smooth trajectory in a curriculum learning setting. Furthermore, for generalization, we parameterize the policies with goal locations, so that the agent can be trained for multiple goals simultaneously. We show result in both simulated environments as well as real experiments, for a $6$-DoF manipulator arm operated in position-controlled mode to validate the proposed idea. We compare the proposed ideas against a PID controller which is used to track a designed trajectory in configuration space. Our experiments show that our RL agent trained with a reference path outperformed a model-free PID controller of the type commonly used on many robotic platforms for trajectory tracking.},
   bibtex_show={true},
   preview={iros2019_trajopt.gif}
 }
